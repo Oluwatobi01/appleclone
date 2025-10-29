@@ -16,11 +16,21 @@ const IPhoneAirSection = () => {
                   With the power of pro inside.
                 </p>
                 <div className="iphone-air-buttons d-flex justify-content-center gap-3">
-                  <a href="#" className="btn btn-link btn-lg iphone-air-button-learn">
+                  <a
+                    href="https://www.apple.com/iphone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-link btn-lg iphone-air-button-learn"
+                  >
                     <span className="button-text">Learn more</span>
                     <span className="button-arrow">›</span>
                   </a>
-                  <a href="#" className="btn btn-primary btn-lg rounded-pill px-4 py-2 iphone-air-button-buy">
+                  <a
+                    href="https://www.apple.com/iphone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-lg rounded-pill px-4 py-2 iphone-air-button-buy"
+                  >
                     <span className="button-text">Buy</span>
                   </a>
                 </div>

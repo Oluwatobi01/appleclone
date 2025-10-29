@@ -13,11 +13,21 @@ const HeroSection = () => {
                 <h1 className="hero-title display-1 fw-bold mb-3">iPhone 17 Pro</h1>
                 <h2 className="hero-subtitle display-4 fw-light mb-4">All out Pro.</h2>
                 <div className="hero-buttons d-flex justify-content-center gap-3">
-                  <a href="#" className="btn btn-outline-primary btn-lg rounded-pill px-4 py-2 hero-button-learn">
+                  <a
+                    href="https://www.apple.com/iphone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-primary btn-lg rounded-pill px-4 py-2 hero-button-learn"
+                  >
                     <span className="button-text">Learn more</span>
                     <span className="button-arrow ms-2">›</span>
                   </a>
-                  <a href="#" className="btn btn-primary btn-lg rounded-pill px-4 py-2 hero-button-buy">
+                  <a
+                    href="https://www.apple.com/iphone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-lg rounded-pill px-4 py-2 hero-button-buy"
+                  >
                     <span className="button-text">Buy</span>
                   </a>
                 </div>
