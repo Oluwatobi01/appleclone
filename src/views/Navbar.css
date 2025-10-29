@@ -1,0 +1,231 @@
+.apple-navbar {
+  background: rgba(22, 22, 23, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0;
+  min-height: 44px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.apple-navbar .container-fluid {
+  padding: 0 22px;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Apple Logo */
+.apple-logo {
+  padding: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+
+.apple-logo-img {
+  height: 18px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.apple-logo:hover .apple-logo-img {
+  opacity: 1;
+}
+
+/* Navigation Links */
+.apple-navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.apple-navbar .nav-item {
+  margin: 0;
+}
+
+.apple-navbar .nav-link {
+  color: #f5f5f7 !important;
+  opacity: 0.8;
+  padding: 0 10px;
+  line-height: 44px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.apple-navbar .nav-link:hover {
+  opacity: 1;
+  color: #fff !important;
+}
+
+.apple-navbar .nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+  background: #f5f5f7;
+  opacity: 0.6;
+}
+
+/* Icons */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  gap: 0;
+}
+
+.nav-icon {
+  padding: 0 10px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  height: 44px;
+}
+
+.search-icon,
+.bag-icon {
+  fill: #f5f5f7;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.nav-icon:hover .search-icon,
+.nav-icon:hover .bag-icon {
+  opacity: 1;
+}
+
+/* Mobile Toggle */
+.apple-navbar .navbar-toggler {
+  border: none;
+  padding: 8px;
+  margin: 0;
+  background: transparent;
+  display: none;
+}
+
+.apple-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 20px;
+  height: 20px;
+}
+
+.apple-navbar .navbar-toggler:focus {
+  box-shadow: none;
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1068px) {
+  .apple-navbar .nav-link {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+  
+  .nav-icon {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .apple-navbar .navbar-toggler {
+    display: block;
+  }
+
+  .apple-navbar .navbar-collapse {
+    background: rgba(22, 22, 23, 0.95);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    margin-top: 44px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .apple-navbar .navbar-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .apple-navbar .nav-link {
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.9;
+    padding: 0 20px;
+  }
+
+  .apple-navbar .nav-link:hover::after {
+    display: none;
+  }
+
+  .navbar-icons {
+    position: static;
+  }
+}
+
+@media (max-width: 734px) {
+  .apple-navbar .container-fluid {
+    padding: 0 16px;
+  }
+
+  .apple-logo {
+    padding: 0;
+  }
+
+  .nav-icon {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .apple-navbar .container-fluid {
+    padding: 0 12px;
+  }
+}
+
+/* Navbar scroll effect */
+.apple-navbar.scrolled {
+  background: rgba(22, 22, 23, 0.95);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+/* Ensure proper spacing and alignment */
+.apple-navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.apple-navbar .navbar-nav .nav-link {
+  padding: 0 12px;
+}
+
+/* Optimized for desktop view */
+@media (min-width: 992px) {
+  .apple-navbar .navbar-nav {
+    transform: translateX(0);
+  }
+  
+  .apple-navbar .nav-link {
+    font-size: 12px;
+    letter-spacing: -0.01em;
+  }
+}

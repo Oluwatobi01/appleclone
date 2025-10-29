@@ -1,0 +1,286 @@
+.apple-footer {
+  background: #f5f5f7;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  padding-top: 20px;
+  border-top: 1px solid #d2d2d7;
+}
+
+.legal-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.legal-text {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.legal-text p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.legal-text a {
+  color: #424245;
+  text-decoration: none;
+}
+
+.legal-text a:hover {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+.footer-links-section {
+  padding: 30px 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.footer-column-title {
+  color: #1d1d1f;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+  cursor: default;
+}
+
+.additional-section-title {
+  color: #1d1d1f;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 24px 0 16px 0;
+  letter-spacing: 0.01em;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #424245;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.additional-section {
+  margin-top: 0;
+}
+
+.shopping-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.shopping-info {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shopping-info p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.shopping-info a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.shopping-info a:hover {
+  text-decoration: underline;
+}
+
+.copyright-section {
+  padding: 20px 0;
+}
+
+.copyright-content {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.copyright-text {
+  color: #6e6e73;
+  font-size: 12px;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-links a {
+  color: #424245;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.separator {
+  color: #d2d2d7;
+}
+
+.country {
+  color: #6e6e73;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .footer-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apple-footer {
+    padding-top: 15px;
+  }
+
+  .legal-section {
+    padding: 15px 0;
+  }
+
+  .footer-links-section {
+    padding: 20px 0;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .shopping-section {
+    padding: 15px 0;
+  }
+
+  .copyright-section {
+    padding: 15px 0;
+  }
+
+  .copyright-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .legal-links {
+    order: 2;
+  }
+
+  .country {
+    order: 3;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer-column {
+    border-bottom: 1px solid #e8e8ed;
+    padding: 0;
+  }
+
+  .footer-column:last-child {
+    border-bottom: none;
+  }
+
+  .footer-column-title {
+    margin-bottom: 0;
+    position: relative;
+    padding: 15px 20px 15px 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .footer-column-title::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-column.active .footer-column-title::after {
+    content: '−';
+  }
+
+  .footer-column-content {
+    display: none;
+    padding: 0 0 15px 0;
+  }
+
+  .footer-column.active .footer-column-content {
+    display: block;
+  }
+
+  .footer-links {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  .additional-section-title {
+    margin: 15px 0 8px 0;
+    font-size: 11px;
+    padding: 0;
+    border: none;
+    cursor: default;
+    font-weight: 600;
+  }
+
+  .additional-section-title::after {
+    display: none;
+  }
+
+  .legal-text p {
+    font-size: 11px;
+  }
+}

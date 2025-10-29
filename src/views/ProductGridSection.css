@@ -1,0 +1,449 @@
+.product-grid-section {
+  background: #fff;
+  color: #1d1d1f;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-grid-container {
+  padding: 0 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.product-card {
+  border-radius: 18px;
+  padding: 40px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.003em;
+  margin-bottom: 12px;
+}
+
+.product-description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.001em;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.product-highlight {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.001em;
+  margin-bottom: 20px;
+  color: #1d1d1f;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-buttons .btn {
+  font-weight: 400;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 17px;
+}
+
+.product-buttons .btn-link {
+  text-decoration: none;
+  padding: 6px 12px;
+}
+
+.product-buttons .btn-link:hover {
+  text-decoration: underline;
+  transform: none;
+  background: transparent;
+}
+
+.product-buttons .btn-primary {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.product-buttons .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
+}
+
+.product-buttons .btn:active {
+  transform: translateY(0);
+  transition: transform 0.1s ease;
+}
+
+.button-arrow {
+  font-size: 1.2em;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+  position: relative;
+  top: -1px;
+  margin-left: 4px;
+}
+
+.product-button-learn:hover .button-arrow {
+  transform: translateX(3px);
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 120px;
+}
+
+.product-image {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Focus states for accessibility */
+.product-buttons .btn:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.product-buttons .btn-primary:focus {
+  outline-color: #0071e3;
+}
+
+/* Individual Card Styling */
+.product-card-watch {
+  background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+  border-color: rgba(0, 0, 0, 0.03);
+}
+
+.product-card-watch .product-title {
+  color: #1d1d1f;
+}
+
+.product-card-watch .product-description {
+  color: #1d1d1f;
+  opacity: 0.8;
+}
+
+.product-card-watch .btn-link {
+  color: #0066cc;
+}
+
+.product-card-watch .btn-primary {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: #fff;
+}
+
+.product-card-airpods {
+  background: linear-gradient(135deg, #f0f8ff 0%, #f5fbff 100%);
+  border-color: rgba(0, 113, 227, 0.1);
+}
+
+.product-card-airpods .product-title {
+  color: #1d1d1f;
+}
+
+.product-card-airpods .product-description {
+  color: #1d1d1f;
+  opacity: 0.8;
+}
+
+.product-card-airpods .btn-link {
+  color: #0066cc;
+}
+
+.product-card-airpods .btn-primary {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: #fff;
+}
+
+.product-card-trade-in {
+  background: linear-gradient(135deg, #fff8f5 0%, #fffdfb 100%);
+  border-color: rgba(255, 149, 0, 0.1);
+}
+
+.product-card-trade-in .product-title {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.product-card-trade-in .product-description {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.product-card-trade-in .product-highlight {
+  color: #1d1d1f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-card-trade-in .btn-link {
+  color: #0066cc;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-card-ipad {
+  background: linear-gradient(135deg, #f8f5ff 0%, #fdfcff 100%);
+  border-color: rgba(88, 86, 214, 0.1);
+}
+
+.product-card-ipad .product-title {
+  color: #1d1d1f;
+}
+
+.product-card-ipad .product-description {
+  color: #1d1d1f;
+  opacity: 0.8;
+}
+
+.product-card-ipad .btn-link {
+  color: #0066cc;
+}
+
+.product-card-ipad .btn-primary {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: #fff;
+}
+
+.product-card-macbook {
+  background: linear-gradient(135deg, #f5fff0 0%, #fbfff5 100%);
+  border-color: rgba(40, 205, 65, 0.1);
+}
+
+.product-card-macbook .product-title {
+  color: #1d1d1f;
+}
+
+.product-card-macbook .product-description {
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.product-card-macbook .btn-link {
+  color: #0066cc;
+}
+
+.product-card-macbook .btn-primary {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: #fff;
+}
+
+.product-card-card {
+  background: linear-gradient(135deg, #fff0f5 0%, #fff5f9 100%);
+  border-color: rgba(255, 45, 85, 0.1);
+}
+
+.product-card-card .product-title {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.product-card-card .product-description {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.product-card-card .btn-link {
+  color: #0066cc;
+}
+
+.product-card-card .btn-primary {
+  background: #0071e3;
+  border-color: #0071e3;
+  color: #fff;
+}
+
+/* Hover effects for each card color */
+.product-card-watch:hover {
+  background: linear-gradient(135deg, #ebebed 0%, #f8f8fa 100%);
+}
+
+.product-card-airpods:hover {
+  background: linear-gradient(135deg, #e6f3ff 0%, #f0f9ff 100%);
+}
+
+.product-card-trade-in:hover {
+  background: linear-gradient(135deg, #ffefe6 0%, #fff8f0 100%);
+}
+
+.product-card-ipad:hover {
+  background: linear-gradient(135deg, #f0ebff 0%, #f8f5ff 100%);
+}
+
+.product-card-macbook:hover {
+  background: linear-gradient(135deg, #ebffe6 0%, #f5ffeb 100%);
+}
+
+.product-card-card:hover {
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffebf5 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .product-card {
+    padding: 35px 25px 25px;
+    min-height: 380px;
+  }
+  
+  .product-title {
+    font-size: 22px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+  }
+  
+  .product-highlight {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid-section {
+    padding: 60px 0;
+  }
+  
+  .product-grid-container {
+    padding: 0 15px;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    padding: 30px 20px 20px;
+    min-height: 350px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+  }
+  
+  .product-description {
+    font-size: 15px;
+  }
+  
+  .product-highlight {
+    font-size: 16px;
+  }
+  
+  .product-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .product-buttons .btn {
+    font-size: 16px;
+  }
+  
+  .product-image-container {
+    height: 100px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-grid-section {
+    padding: 40px 0;
+  }
+  
+  .product-grid-container {
+    padding: 0 10px;
+  }
+  
+  .product-card {
+    padding: 25px 15px 15px;
+    min-height: 320px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+  }
+  
+  .product-description {
+    font-size: 14px;
+  }
+  
+  .product-highlight {
+    font-size: 15px;
+  }
+  
+  .product-buttons .btn {
+    font-size: 15px;
+  }
+  
+  .product-buttons .btn-primary {
+    padding: 5px 14px;
+    font-size: 14px;
+  }
+  
+  .product-image-container {
+    height: 90px;
+    margin-top: 12px;
+  }
+}
