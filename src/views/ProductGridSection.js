@@ -116,12 +116,12 @@ const ProductGridSection = () => {
                       <div className="product-buttons">
                         {product.buttons.map((button, index) => (
                           button.type === "link" ? (
-                            <a key={index} href="#" className="btn btn-link product-button-learn">
+                            <a key={index} href="https://www.apple.com/" target="_blank" rel="noopener noreferrer" className="btn btn-link product-button-learn">
                               <span className="button-text">{button.text}</span>
                               {button.arrow && <span className="button-arrow">›</span>}
                             </a>
                           ) : (
-                            <a key={index} href="#" className="btn btn-primary product-button-buy">
+                            <a key={index} href="https://www.apple.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary product-button-buy">
                               <span className="button-text">{button.text}</span>
                             </a>
                           )

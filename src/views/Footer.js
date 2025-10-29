@@ -6,7 +6,7 @@ const Footer = () => {
 
   const toggleSection = (index) => {
     setActiveSections((prev) => (
-      prev.includes(index) 
+      prev.includes(index)
         ? prev.filter((i) => (i !== index))
         : [...prev, index]
     ));
@@ -16,7 +16,7 @@ const Footer = () => {
     {
       title: "Shop and Learn",
       links: [
-        "Store", "Mac", "iPad", "iPhone", "Watch", "Vision", "AirPods", 
+        "Store", "Mac", "iPad", "iPhone", "Watch", "Vision", "AirPods",
         "TV & Home", "AirTag", "Accessories", "Gift Cards"
       ],
       additionalSections: [
@@ -35,8 +35,8 @@ const Footer = () => {
         {
           title: "Entertainment",
           links: [
-            "Apple One", "Apple TV+", "Apple Music", "Apple Arcade", 
-            "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books", 
+            "Apple One", "Apple TV+", "Apple Music", "Apple Arcade",
+            "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books",
             "App Store"
           ]
         }
@@ -45,8 +45,8 @@ const Footer = () => {
     {
       title: "Apple Store",
       links: [
-        "Find a Store", "Genius Bar", "Today at Apple", "Group Reservations", 
-        "Apple Camp", "Apple Store App", "Certified Refurbished", "Apple Trade In", 
+        "Find a Store", "Genius Bar", "Today at Apple", "Group Reservations",
+        "Apple Camp", "Apple Store App", "Certified Refurbished", "Apple Trade In",
         "Financing", "Carrier Deals at Apple", "Order Status", "Shopping Help"
       ]
     },
@@ -65,7 +65,7 @@ const Footer = () => {
         {
           title: "For Government",
           links: [
-            "Apple and Government", "Shop for Veterans and Military Employees", 
+            "Apple and Government", "Shop for Veterans and Military Employees",
             "Shop for State and Local Employees", "Shop for Federal Employees"
           ]
         }
@@ -74,14 +74,14 @@ const Footer = () => {
     {
       title: "Apple Values",
       links: [
-        "Accessibility", "Education", "Environment", "Inclusion and Diversity", 
+        "Accessibility", "Education", "Environment", "Inclusion and Diversity",
         "Privacy", "Racial Equity and Justice", "Supply Chain Innovation"
       ],
       additionalSections: [
         {
           title: "About Apple",
           links: [
-            "Newsroom", "Apple Leadership", "Career Opportunities", "Investors", 
+            "Newsroom", "Apple Leadership", "Career Opportunities", "Investors",
             "Ethics & Compliance", "Events", "Contact Apple"
           ]
         }
@@ -96,13 +96,8 @@ const Footer = () => {
           <div className="row justify-content-center">
             <div className="col-12 col-lg-10">
               <div className="legal-text">
-                <p>1. Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card.</p>
-                <p>Acute value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase, in order to take-in certain prerequisites of a valid place (to local law may require saving this information). Offer may not be available at all times and may vary between no more than certain factors. Some users may have additional requirements for their or its trade - information can only be used to check out if it is required to make an transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitation may apply.</p>
-                <p>To access and deal all Apple Card features and policies available only to Apple Card users, we must add Apple Card to Whales on an iPhone or iPad that supports such has the latest version of iOS®™ 8025. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, such issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
-                <p>Apple Payments Service LLC is subsidiary of Apple Inc., a service provider of Goldman Sachs Bank USA for Apple Card and Sarings accounts. Neither Apple Inc. nor Apple Payments Service LLC is listed in profit.</p>
-                <p>If you reside in the U.S. territories, please call Goldman Sachs at 877-235-2823 with questions about Apple Card.</p>
-                <p>Learn more about how Apple Card applications are evaluated at <a href="#">support.apple.com</a>.</p>
-                <p>A subscription is required for Apple Acrobic, Apple Fitness+, Apple Music, and Apple TV+.</p>
+                <p>Learn more about how Apple Card applications are evaluated at <a href="https://support.apple.com/" target="_blank" rel="noopener noreferrer">support.apple.com</a>.</p>
+                <p>A subscription is required for Apple Fitness+, Apple Music, and Apple TV+.</p>
                 <p>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.</p>
               </div>
             </div>
@@ -116,11 +111,11 @@ const Footer = () => {
             <div className="col-12 col-lg-10">
               <div className="footer-links-grid">
                 {footerColumns.map((column, index) => (
-                  <div 
+                  <div
                     key={index}
                     className={`footer-column ${activeSections.includes(index) ? 'active' : ''}`}
                   >
-                    <h4 
+                    <h4
                       className="footer-column-title"
                       onClick={() => toggleSection(index)}
                     >
@@ -129,16 +124,20 @@ const Footer = () => {
                     <div className="footer-column-content">
                       <ul className="footer-links">
                         {column.links.map((link, linkIndex) => (
-                          <li key={linkIndex}><a href="#">{link}</a></li>
+                          <li key={linkIndex}>
+                            <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">{link}</a>
+                          </li>
                         ))}
                       </ul>
-                      
+
                       {column.additionalSections && column.additionalSections.map((section, sectionIndex) => (
                         <div key={sectionIndex} className="additional-section">
                           <h5 className="additional-section-title">{section.title}</h5>
                           <ul className="footer-links">
                             {section.links.map((link, linkIndex) => (
-                              <li key={linkIndex}><a href="#">{link}</a></li>
+                              <li key={linkIndex}>
+                                <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">{link}</a>
+                              </li>
                             ))}
                           </ul>
                         </div>
@@ -157,7 +156,9 @@ const Footer = () => {
           <div className="row justify-content-center">
             <div className="col-12 col-lg-10">
               <div className="shopping-info">
-                <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call <a href="tel:1-800-MY-APPLE">1-800-MY-APPLE</a>.</p>
+                <p>
+                  More ways to shop: <a href="https://www.apple.com/retail/" target="_blank" rel="noopener noreferrer">Find an Apple Store</a> or <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">other retailer</a> near you. Or call <a href="tel:1-800-MY-APPLE">1-800-MY-APPLE</a>.
+                </p>
               </div>
             </div>
           </div>
@@ -171,15 +172,15 @@ const Footer = () => {
               <div className="copyright-content">
                 <div className="copyright-text">Copyright © 2025 Apple Inc. All rights reserved.</div>
                 <div className="legal-links">
-                  <a href="#">Privacy Policy</a>
+                  <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                   <span className="separator">|</span>
-                  <a href="#">Terms of Use</a>
+                  <a href="https://www.apple.com/legal/internet-services/terms/site.html" target="_blank" rel="noopener noreferrer">Terms of Use</a>
                   <span className="separator">|</span>
-                  <a href="#">Sales and Refunds</a>
+                  <a href="https://www.apple.com/shop/browse/open/salespolicies" target="_blank" rel="noopener noreferrer">Sales and Refunds</a>
                   <span className="separator">|</span>
-                  <a href="#">Legal</a>
+                  <a href="https://www.apple.com/legal/" target="_blank" rel="noopener noreferrer">Legal</a>
                   <span className="separator">|</span>
-                  <a href="#">Site Map</a>
+                  <a href="https://www.apple.com/sitemap/" target="_blank" rel="noopener noreferrer">Site Map</a>
                 </div>
                 <div className="country">United States</div>
               </div>
